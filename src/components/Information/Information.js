@@ -3,7 +3,7 @@ import './Information.css'
 
 const Information = () => {
     return (
-        <div>
+        <div className='informatin-list'>
             <div className='img-information'>
                 <img className='rounded-circle img' src="https://image.shutterstock.com/image-photo/portrait-smiling-red-haired-millennial-260nw-1194497251.jpg" alt="" />
                 <div>

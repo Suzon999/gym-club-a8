@@ -3,7 +3,7 @@ import './Break.css'
 
 const Break = () => {
     return (
-        <div>
+        <div className='informatin-list'>
             <h4 className='my-4'>Add A Break</h4>
             <div className='button'>
                 <button className=' flex-button'><p>10s</p></button>
@@ -18,6 +18,10 @@ const Break = () => {
                 <h5 className='time'>Break time :</h5>
 
             </div>
+            <button className='btn-cart mt-5'>
+                <h5 className='btn-text'>Add To Cart</h5>
+
+            </button>
         </div>
     );
 };
