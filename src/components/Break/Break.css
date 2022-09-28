@@ -16,7 +16,7 @@
     background-color: white;
 }
 
-.flex-button p {
+.btn-p {
     display: flex;
     justify-content: center;
     align-items: center;
