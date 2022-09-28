@@ -1,4 +1,5 @@
 import React from 'react';
+import './Information.css'
 
 const Information = () => {
     return (
@@ -10,7 +11,7 @@ const Information = () => {
                     <p>Sydney, Australia</p>
                 </div>
             </div>
-            <div className='d-flex gap-5'>
+            <div className='details'>
                 <div >
                     <h3>75kg</h3>
                     <p>Weight</p>
