@@ -1,0 +1,32 @@
+import React from 'react';
+
+const Information = () => {
+    return (
+        <div>
+            <div className='img-information'>
+                <img className='rounded-circle img' src="https://image.shutterstock.com/image-photo/portrait-smiling-red-haired-millennial-260nw-1194497251.jpg" alt="" />
+                <div>
+                    <h4>Zahid Hossain</h4>
+                    <p>Sydney, Australia</p>
+                </div>
+            </div>
+            <div className='d-flex gap-5'>
+                <div >
+                    <h3>75kg</h3>
+                    <p>Weight</p>
+                </div>
+                <div>
+                    <h3>6.5</h3>
+                    <p>Height</p>
+                </div>
+                <div>
+                    <h3>25
+                    </h3>
+                    <p>Age</p>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Information;
