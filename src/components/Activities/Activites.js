@@ -10,6 +10,10 @@ const Activites = () => {
             .then(res => res.json())
             .then(data => setActivites(data))
     }, [])
+    // button handler 
+    const handleAddToLIst = (item) => {
+        console.log(item);
+    }
 
     return (
         <div className='activites-container'>
@@ -22,6 +26,7 @@ const Activites = () => {
                         activites.map(item => <Item
                             kye={item.id}
                             item={item}
+                            handleAddToLIst={handleAddToLIst}
                         ></Item>)
                     }
                 </div>
