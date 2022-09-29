@@ -5,6 +5,7 @@ import Item from '../Item/Item';
 import './Activites.css'
 const Activites = () => {
     const [activites, setActivites] = useState([])
+    const [list, setList] = useState([])
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
@@ -12,7 +13,9 @@ const Activites = () => {
     }, [])
     // button handler 
     const handleAddToLIst = (item) => {
-        console.log(item);
+        // console.log(item);
+        const newList = [...list, item];
+        setList(newList);
     }
 
     return (
@@ -33,7 +36,7 @@ const Activites = () => {
             </div>
             <div className="activites-cart-container">
                 <Information></Information>
-                <Break></Break>
+                <Break list={list} ></Break>
             </div>
         </div>
     );
