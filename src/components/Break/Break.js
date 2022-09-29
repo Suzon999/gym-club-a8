@@ -6,6 +6,11 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Break = ({ list }) => {
     const [sec, setSec] = useState('');
+    useEffect(() => {
+        const storageData = localStorage.getItem('times');
+        setSec(storageData)
+    }, [])
+
     let times = 0;
     for (const time of list) {
         times = parseFloat(times + time.time);
@@ -16,6 +21,7 @@ const Break = ({ list }) => {
 
 
     const handleBreak = (seconds) => {
+        localStorage.setItem("times", seconds);
         setSec(seconds);
         // setBreak(seconds)
     }
