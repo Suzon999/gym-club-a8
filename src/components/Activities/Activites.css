@@ -38,7 +38,7 @@
 
 @media screen and (max-width: 600px) {
 
-    .activites-item-container {
+    .grid-items {
         display: grid;
         grid-template-columns: 1fr;
 
